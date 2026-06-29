@@ -144,6 +144,7 @@ function Navbar() {
       <AnimatePresence>
         {isMegaMenuOpen && megaMenuData[hoveredNav] && (
           <motion.div
+            key="mega-menu"
             className="mega-menu"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
